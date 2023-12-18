@@ -3,6 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:share/share.dart';
 
+import 'Curriculum.dart';
+import 'CustomDrawer().dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -29,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: CustomDrawer(),
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
         title: Text(
